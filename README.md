@@ -1,7 +1,7 @@
     NOTICE
 
     I am not responsible for any damage you might cause to your power supply, Raspberry Pi, LEDs or to yourself. 
-    If you plug a wrong wire into wrong pin, you might fry your RPi.   
+    If you accidentally miswire your RPi, you might sacrifice the whole board for the glory of satan.
 
 [Introduction](#introduction)
 
@@ -36,7 +36,7 @@ Simplest usage would be:
     ?>
 	
 
-However, I've included a all-in-one package which requires nothing else but you setting up the RPi and connecting the LEDs correctly. It's even paired with a "remote" that you can access directly from your browser.
+However, I've included a all-in-one package which requires nothing but you setting up the RPi and connecting the LEDs correctly. It's even paired with a "remote" that you can access directly from your browser from other devices.
 
 <a name="whatsneeded"></a>
 What you will need:
@@ -51,12 +51,12 @@ What you will need:
 <a name="guidefordummies"></a>
 ##Guide
 
-Setup a LAMP server if you haven't already, Digital Ocean has a good tutorial about that. 
+Setup a LAMP server if you haven't already, Digital Ocean has an excellent tutorial that will take care of the requirements.
 
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu
 Having PHPMyAdmin installed can also help later on.
 
-Assuming you're running Raspbian:
+Assuming you're running Debian distribution for RPi, like Raspbian:
 ```
 sudo apt-get update
 sudo apt-get install autoconf
@@ -76,7 +76,7 @@ Then you need to wire it up, like this (photo credit to mitchtech.net)
 After you've done that, you might as well try it out!
 Try running `echo "18=1" > /dev/pi-blaster` into shell and see if anything lights up! 
 
-If it does, here's the rest if you couldn't figure it out yourself.
+If it does, here's the rest should you not figure it out yourself.
 
 Assuming your www directory is /var/www/: 
 
@@ -88,4 +88,4 @@ mv rpi-php* led-controller
 php /var/www/led-controller/sample.php
 ```
 
-Then navigate to your RPis IP address, for example, 192.168.1.50/led-controller/sample.php, and see if a manly color lights up!
+Then navigate to your RPi's IP address and to the path of led-controller, for example, 192.168.1.50/led-controller/sample.php, and see if a manly color lights up!
