@@ -72,10 +72,6 @@ Then you need to wire it up, like this (photo credit to mitchtech.net)
 
 ![Raspberry Pi Wiring](http://i.imgur.com/bQPst0m.png "Raspberry Pi Wiring")
 
-Be careful when wiring it, because if you accidentally plug a 12V power supply to a GPIO pin, you can say goodbye to your RPi. Here's two photos about how you **could** setup your wiring.
-
-![Raspberry Pi Wiring](http://i.imgur.com/9uUQErO.jpg "Raspberry Pi Wiring")
-
 
 After you've done that, you might as well try it out!
 Try running `echo "18=1" > /dev/pi-blaster` into shell and see if anything lights up! 
