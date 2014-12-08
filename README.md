@@ -1,6 +1,6 @@
     NOTICE
 
-    I am not responsible for any damage you might cause to your power supply, Raspberry Pi, LEDs or to yourself. 
+    I am not responsible for any damage you might cause to your power supply, Raspberry Pi, LEDs, to yourself or to your alarm clock.
     If you plug a wrong wire into wrong pin, you might fry your RPi.   
 
 [Introduction](#introduction)
@@ -61,7 +61,7 @@ Assuming you're running Raspbian:
 sudo apt-get update
 sudo apt-get install autoconf
 sudo apt-get install unzip
-wget https://github.com/sarfata/pi-blaster/archive/master.zip
+wget https://github.com/k1sul1/rpi-php-led-controller/archive/master.zip
 unzip master.zip 
 cd pi-blaster-master
 sudo make install
