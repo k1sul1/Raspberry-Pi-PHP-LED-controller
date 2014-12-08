@@ -20,10 +20,11 @@ This class was written to be used in conjuction with **PiBlaster** (https://gith
 PiBlaster creates a special file in `/dev/pi-blaster`, and any application can write to it, meaning you don't have to be root to control the LEDs. 
 
 Using this class is completely free, but you can buy me a cup of coffee if you want. But that is completely optional. I did this for fun and education.
+
 <a href='https://pledgie.com/campaigns/27623'><img alt='Click here to lend your support to: LED-controller PHP class for Raspberry Pi and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/27623.png?skin_name=chrome' border='0' ></a>
 
 This project is licensed under MIT License, which pretty much allows you to do what you want with the code, but requires you to include a license and copyright notice. 
- 
+
 <a name="usage"></a>
 Simplest usage would be:
 
@@ -45,10 +46,10 @@ What you will need:
 - RGB LED (strip)
 - Hookup wire (can be bought from ebay for about 1€)
 - Jumper wire (can be bought from ebay for about 1€)
-- 12V DC power supply (anything with high enough amp rating. 5M of 5050 RGB LEDs draw about 6A of power)
+- DC power supply (anything with high enough amp rating. 5M of 12V 5050 RGB LEDs draw about 6A of power).
 
 <a name="guidefordummies"></a>
-##Here's for those of you who want everything now:
+##Guide
 
 Setup a LAMP server if you haven't already, Digital Ocean has a good tutorial about that. 
 
