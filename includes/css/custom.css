@@ -1,0 +1,34 @@
+body{
+	background: #191818;
+	color:#f1f1f1;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color:#f1f1f1;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	background: #191818;
+	z-index: 1000;
+}
+
+#menu a{
+	color:#999;
+
+}
+
+#menu li a:hover{
+	background: #514D4D;
+}
+
+.form-input{
+	height: 28px;
+	text-align: left !important;
+	width: 140px;
+	padding:2px !important;
+}
+.button-small {
+    font-size: 85%;
+}
