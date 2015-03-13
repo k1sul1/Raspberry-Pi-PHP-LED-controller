@@ -33,7 +33,7 @@ if(isset($_POST['function'])){
 
 
 
-	if(is_int($_POST['times'])){
+	if(is_numeric($_POST['times'])){
 		$times = $_POST['times'];
 	}
 
