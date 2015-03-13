@@ -3,22 +3,22 @@
 class Database {
 
 	# NOTICE:
-	# Please don't use this file as an examle on how to connect to database . The code is held together by paperclips and bubble gum. It works, but it ain't recommended. 
-	# Please refer to http://stackoverflow.com/tags/pdo/info if you need help with database connections. 
+	# Please don't use this file as an examle on how to connect to database . The code is held together by paperclips and bubble gum. It works, but it ain't recommended.
+	# Please refer to http://stackoverflow.com/tags/pdo/info if you need help with database connections.
 
-	# This is just to save a color to database. Useful when using a cronjob to set the color, for example, at reboot. 
+	# This is just to save a color to database. Useful when using a cronjob to set the color, for example, at reboot.
 
 	public $db;
 
 	public function __construct($db){
-		$this->db = $db;		
+		$this->db = $db;
 	}
 
 	function SetupDatabase(){
 
-	# Just an useless function to create the necessary table(s) to painlessly control RGB LEDs from your Raspberry Pi. 
+	# Just an useless function to create the necessary table(s) to painlessly control RGB LEDs from your Raspberry Pi.
 
-		$pdo = $this->db->prepare("CREATE TABLE IF NOT EXISTS 
+		$pdo = $this->db->prepare("CREATE TABLE IF NOT EXISTS
 			colors (
 				cID int AUTO_INCREMENT PRIMARY KEY,
 				red int(3) NOT NULL,
@@ -40,7 +40,7 @@ class Database {
 
 	function saveColor($color){
 
-		# Take not that you _MUST_ make sure that the color is actually a color before using this function.
+		# Take note that you _MUST_ make sure that the color is actually a color before using this function.
 		# You could do that with the hex2rbg function.
 		# $dbh->saveColor(hex2rbg($hex));
 		# Not that it would do any harm, but then you would be wondering why you have no lights :>
@@ -55,7 +55,7 @@ class Database {
 
 
 	function getColor(){
-		# This function simply gets the last addition to database and returns it in an array format. 
+		# This function simply gets the last addition to database and returns it in an array format.
 		# Like this: Array ( [red] => 255 [green] => 255 [blue] => 255 )
 		# You could then use it with the setRGB function (See class.rgbcontrol.php for that.)
 		# Simple usage is $led->setRBG($dbh->getColor());
